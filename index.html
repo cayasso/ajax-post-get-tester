@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX Form Tester with jQuery</title>
+		<link type="text/css" href="css/style.css" rel="Stylesheet" />
+    </head>
+    <body>
+		
+	<div class="container">
+
+		<h1>AJAX Form Tester</h1>
+
+		<span class="note">Enter your url to test right here, you can also add pair values like the example bellow</span>
+
+		<form id="ajaxform">
+
+			<input id="input-field" class="field" type="text" value="http://example.com/?name=&active=true" />
+			<select id="method-select" name="method">
+			  <option selected="selected" value="GET">GET</option>
+			  <option value="POST">POST</option>
+			</select>
+
+			<input id="button" class="button" type="submit" value="GO" />
+		
+		</form>
+
+		<h2>Raw output</h2>
+		<div id="raw-response">
+			<pre>
+			</pre>
+		</div>
+
+		<h2>HTML output</h2>
+		<div id="formated-response">
+		
+		</div>
+					
+	</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/ajax-test.js"></script>
+    </body>
+</html>
